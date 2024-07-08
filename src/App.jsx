@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import SharedLayout from 'components/SharedLayout/SharedLayout';
-import ErrorPage from 'pages/ErrorPage/ErrorPage';
-import MainPage from './pages/MainPage/MainPage';
-
+import { lazy } from 'react';
+const MainPage = lazy(() => import('./pages/MainPage/MainPage.jsx'));
+const ErrorPage = lazy(() => import('./pages/ErrorPage/ErrorPage.jsx'));
 // const test = import.meta.env.VITE_API_TEST;
 
 function App() {
