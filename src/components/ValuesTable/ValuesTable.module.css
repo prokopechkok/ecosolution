@@ -1,0 +1,123 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  /* color: var(--text-main); */
+}
+
+.listItem {
+  height: 197px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: start;
+  align-items: start;
+  background-color: var(--bg-grey);
+  overflow: hidden;
+  padding: 13px 12px 12px 12px;
+}
+.titleWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 33px;
+  border-bottom: var(--border-main);
+  width: 100%;
+}
+.valueIcon {
+  width: 16px;
+  height: 16px;
+  fill: var(--bg-grey);
+  stroke: var(--text-main);
+}
+.valueTitle {
+  font-family: var(--ff-headers);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.text {
+  font-family: var(--ff-main);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    grid-template-areas:
+      'area1 area2 area3 area3'
+      'area4 area4 area5 area6';
+  }
+  .listItem {
+    padding-top: 12px;
+  }
+  .listItem:nth-of-type(1) {
+    grid-area: area1;
+  }
+  .listItem:nth-of-type(2) {
+    grid-area: area2;
+  }
+  .listItem:nth-of-type(3) {
+    grid-area: area3;
+  }
+  .listItem:nth-of-type(4) {
+    grid-area: area4;
+  }
+  .listItem:nth-of-type(5) {
+    grid-area: area5;
+  }
+  .listItem:nth-of-type(6) {
+    grid-area: area6;
+  }
+  .listItem:nth-of-type(3),
+  .listItem:nth-of-type(4) {
+    padding: 0;
+    gap: 0;
+  }
+  .picture {
+    height: 100%;
+    display: flex;
+  }
+  .image {
+    width: 100%;
+  }
+  .titleWrapper {
+    padding-bottom: 51px;
+  }
+  .valueTitle {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+@media (min-width: 1280px) {
+  .list {
+    gap: 48px;
+  }
+  .listItem {
+    height: 339px;
+    gap: 24px;
+    padding: 48px 24px;
+  }
+  .titleWrapper {
+    padding-bottom: 94px;
+  }
+  .valueIcon {
+    width: 24px;
+    height: 24px;
+  }
+  .valueTitle {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .text {
+    font-size: 16px;
+  }
+}

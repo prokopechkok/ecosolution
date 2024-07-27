@@ -1,0 +1,62 @@
+.contactsList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: start;
+  align-items: start;
+
+  font-family: var(--ff-main);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  text-align: justify;
+}
+.contactsListItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 244px;
+}
+.label {
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  font-size: 16px;
+}
+.phoneList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.phoneListItem,
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+
+  font-size: 20px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke-width: 1.5px;
+  stroke: var(--text-main);
+}
+.networksList {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: start;
+  align-items: center;
+}
+.network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+.networkIcon {
+  fill: var(--text-main);
+}

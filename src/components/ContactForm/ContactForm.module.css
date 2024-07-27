@@ -1,0 +1,79 @@
+.form {
+  margin-top: 24px;
+  padding: 36px 12px;
+  width: 100%;
+
+  background-color: var(--bg-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  gap: 28px;
+
+  /* height: 559px; */
+}
+.label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  text-align: justify;
+}
+.textlabel {
+  height: 174px;
+}
+.input {
+  height: 31px;
+  padding-bottom: 8px;
+  font-size: 18px;
+  color: var(--placeholder);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: var(--border-main);
+}
+.input.textarea {
+  border-bottom: none;
+}
+
+.textarea {
+  height: 174px;
+  width: 100%;
+}
+.btn {
+  border: var(--border-main);
+  border-radius: 500px;
+  padding: 4px 4px 4px 16px;
+
+  width: fit-content;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+
+  margin-top: -12px;
+}
+.circle {
+  width: 32px;
+  height: 33px;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--accent-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnIcon {
+  width: 16px;
+  height: 17px;
+  fill: none;
+  stroke: var(--text-main);
+}

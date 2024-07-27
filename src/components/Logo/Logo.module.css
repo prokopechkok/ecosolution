@@ -1,0 +1,37 @@
+.logoBlock {
+  display: flex;
+  gap: 4px;
+  justify-content: start;
+  align-items: center;
+  height: 18px;
+}
+.logoIcon {
+  height: 18px;
+  width: 31px;
+}
+/* .logoIcon use {
+  width: 31px;
+  height: 18px;
+} */
+
+.eco {
+  font-family: var(--ff-logo-main);
+  font-weight: 500;
+  font-size: 33px;
+  letter-spacing: -0.04em;
+  color: #173d33;
+}
+.greenergy {
+  display: inline-block;
+  height: 18px;
+  font-family: var(--ff-logo-secondary);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 90%;
+  letter-spacing: -0.04em;
+  color: #173d33;
+}
+.greenergy span {
+  color: #97d28b;
+  /* width: 60px; */
+}

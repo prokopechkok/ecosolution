@@ -1,0 +1,23 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: start;
+  align-items: center;
+
+  padding-top: 36px;
+  width: 100%;
+}
+.title {
+  font-family: var(--ff-headers);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
