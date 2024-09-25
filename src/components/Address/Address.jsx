@@ -1,8 +1,8 @@
 import s from './Address.module.css';
 
-const Address = ({ isTablet }) => {
+const Address = ({ isTablet, gap }) => {
   return (
-    <ul className={s.list}>
+    <ul className={s.list} style={{ gap: `${gap}` }}>
       <li className={s.listItem}>
         <address>
           <a

@@ -11,7 +11,7 @@ import Address from '../Address/Address';
 const Values = ({ isTablet }) => {
   return (
     <section className={s.section}>
-      <Address isTablet={isTablet} />
+      <Address isTablet={isTablet} gap="8px" />
       <picture className={s.picture}>
         <source
           media="(min-width: 1280px)"

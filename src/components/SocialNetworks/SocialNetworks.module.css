@@ -1,0 +1,22 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke-width: 1.5px;
+  stroke: var(--text-main);
+}
+.networksList {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: start;
+  align-items: center;
+}
+.network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.networkIcon {
+  fill: var(--text-main);
+}

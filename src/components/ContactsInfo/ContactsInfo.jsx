@@ -1,6 +1,6 @@
-import clsx from 'clsx';
 import { Icon } from '../Icon/Icon';
 import s from './ContactsInfo.module.css';
+import SocialNetworks from '../SocialNetworks/SocialNetworks';
 
 const ContactsInfo = () => {
   return (
@@ -49,14 +49,8 @@ const ContactsInfo = () => {
       </li>
       <li className={s.contactsListItem}>
         <h3 className={s.label}>Social Networks:</h3>
-        <ul className={s.networksList}>
-          <li className={s.network}>
-            <Icon id="facebook" className={clsx(s.icon, s.networkIcon)} />
-          </li>
-          <li className={s.network}>
-            <Icon id="instagram" className={s.icon} />
-          </li>
-        </ul>
+
+        <SocialNetworks size="48px" />
       </li>
     </ul>
   );

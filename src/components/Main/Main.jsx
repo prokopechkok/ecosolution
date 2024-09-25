@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const Main = () => {
   return (
-    <section className={s.section}>
+    <section className={s.section} id="main">
       <h1 className={s.title}>
         RENEWABLE ENERGY <br className={s.breakFor} />
         For <br className={s.breakAny} />
