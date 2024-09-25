@@ -14,16 +14,20 @@
 .logoRow {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /* flex-direction: row; */
+  flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: center;
   align-items: start;
+  position: relative;
 }
-.logoColumn {
+/* .logoColumn {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  align-items: center;
-}
+  align-items: flex-end;
+} */
+
 .circle {
   width: 32px;
   height: 33px;
@@ -33,7 +37,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
+  position: absolute;
+  right: 0;
+  top: 0;
 }
+.socialNetworksMobile {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btnIcon {
   width: 16px;
   height: 16px;
@@ -43,4 +60,30 @@
 .copyright {
   margin-top: 16px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .logoRow {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* .adress {
+    text-align: left;
+  } */
+
+  /* .copyright {
+    text-align: left;
+    margin-top: 0;
+  } */
+
+  .socialNetworksMobile {
+    margin-top: 0;
+  }
+
+  .circle {
+    position: static;
+    margin-top: 0;
+  }
 }

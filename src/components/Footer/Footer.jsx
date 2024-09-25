@@ -30,16 +30,20 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={s.logoRow}>
-        <div className={s.logoColumn}>
-          <Logo />
-          <SocialNetworks size="24px" />
-        </div>
+        <Logo />
+        {!isTablet && (
+          <div className={s.socialNetworksMobile}>
+            <SocialNetworks size="24px" />
+          </div>
+        )}
+
+        {isTablet && <SocialNetworks size="24px" />}
         <Link className={s.circle} to="main" smooth={true} duration={500}>
           <Icon className={s.btnIcon} id="arrow-up" />
         </Link>
       </div>
       <div className={s.adress}>
-        <Address isTablet={isTablet} gap="16px" />
+        <Address isTablet={isTablet} gap={isTablet ? '0px' : '16px'} />
         {!isTablet && <p className={s.copyright}>ecosolution &#169; 2023</p>}
       </div>
     </footer>

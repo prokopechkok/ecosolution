@@ -4,7 +4,7 @@ import s from './SocialNetworks.module.css';
 
 const SocialNetworks = ({ size }) => {
   return (
-    <ul className={s.networksList}>
+    <ul className={clsx(s.networksList)}>
       <li className={s.network} style={{ width: `${size}`, height: `${size}` }}>
         <Icon id="facebook" className={clsx(s.icon, s.networkIcon)} />
       </li>
