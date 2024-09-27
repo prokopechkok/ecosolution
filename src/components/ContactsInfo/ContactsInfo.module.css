@@ -1,4 +1,7 @@
 .contactsList {
+  max-width: 244px;
+  height: 360px;
+
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -7,6 +10,7 @@
 
   font-family: var(--ff-main);
   font-weight: 400;
+
   letter-spacing: -0.04em;
   text-align: justify;
 }
@@ -14,7 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-width: 244px;
+  /* max-width: 244px; */
 }
 .label {
   font-weight: 400;
@@ -43,6 +47,7 @@
   stroke-width: 1.5px;
   stroke: var(--text-main);
 }
+/*
 .networksList {
   display: flex;
   flex-direction: row;
@@ -59,4 +64,24 @@
 }
 .networkIcon {
   fill: var(--text-main);
+} */
+
+@media (min-width: 768px) {
+}
+@media (min-width: 1280px) {
+  .contactsList {
+    max-width: 466px;
+    height: 388px;
+    gap: 32px;
+  }
+  .contactsListItem {
+    gap: 16px;
+  }
+  .phoneListItem,
+  .contact {
+    font-size: 24px;
+  }
+  .icon {
+    height: 25px;
+  }
 }

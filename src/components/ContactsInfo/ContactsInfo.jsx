@@ -50,7 +50,7 @@ const ContactsInfo = () => {
       <li className={s.contactsListItem}>
         <h3 className={s.label}>Social Networks:</h3>
 
-        <SocialNetworks size="48px" />
+        <SocialNetworks size={window.innerWidth >= 1280 ? '24px' : '48px'} />
       </li>
     </ul>
   );
