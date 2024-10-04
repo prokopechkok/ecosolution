@@ -37,7 +37,7 @@ const MainPage = () => {
       <Values isTablet={isTablet} />
       <Electricity />
       <Cases />
-      <Questions />
+      <Questions isTablet={isTablet} />
       <ContactUs />
       {isOpen && <BurgerMenu />}
     </div>

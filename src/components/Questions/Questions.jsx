@@ -3,30 +3,30 @@ import { Icon } from '../Icon/Icon';
 import s from './Questions.module.css';
 import { questions } from '../../assets/data/questions';
 import { useState } from 'react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
-const Questions = () => {
+const Questions = ({ isTablet }) => {
   const [openedIdx, setOpenedIdx] = useState(0);
 
-  const [isTablet, setIsTablet] = useState(false);
+  // const [isTablet, setIsTablet] = useState(false);
 
-  useEffect(() => {
-    if (window.innerWidth >= 768) {
-      setIsTablet(true);
-    }
+  // useEffect(() => {
+  //   if (window.innerWidth >= 768) {
+  //     setIsTablet(true);
+  //   }
 
-    const updateMedia = () => {
-      if (window.innerWidth < 768) {
-        setIsTablet(false);
-      } else {
-        setIsTablet(true);
-      }
-    };
+  //   const updateMedia = () => {
+  //     if (window.innerWidth < 768) {
+  //       setIsTablet(false);
+  //     } else {
+  //       setIsTablet(true);
+  //     }
+  //   };
 
-    window.addEventListener('resize', updateMedia);
+  //   window.addEventListener('resize', updateMedia);
 
-    return () => window.removeEventListener('resize', updateMedia);
-  }, []);
+  //   return () => window.removeEventListener('resize', updateMedia);
+  // }, []);
 
   const toggleAnswer = (index) => {
     setOpenedIdx(openedIdx === index ? null : index);

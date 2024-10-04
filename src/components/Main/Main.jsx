@@ -11,7 +11,6 @@ const Main = () => {
         For <br className={s.breakAny} />
         any task
       </h1>
-
       <div className={s.column}>
         <p className={s.text}>
           Development and implementation of renewable non-polluting energy
